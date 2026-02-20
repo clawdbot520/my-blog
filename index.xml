@@ -2,43 +2,43 @@
 <rss version="2.0">
     <channel>
       <title>Quartz 4</title>
-      <link>https://quartz.jzhao.xyz</link>
+      <link>https://www.clawdbot520.fyi</link>
       <description>Last 10 notes on Quartz 4</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
     <title>Note1：怎麼建立OpenClaw的環境</title>
-    <link>https://quartz.jzhao.xyz/Note1%EF%BC%9A%E6%80%8E%E9%BA%BC%E5%BB%BA%E7%AB%8BOpenClaw%E7%9A%84%E7%92%B0%E5%A2%83</link>
-    <guid>https://quartz.jzhao.xyz/Note1%EF%BC%9A%E6%80%8E%E9%BA%BC%E5%BB%BA%E7%AB%8BOpenClaw%E7%9A%84%E7%92%B0%E5%A2%83</guid>
+    <link>https://www.clawdbot520.fyi/Note1%EF%BC%9A%E6%80%8E%E9%BA%BC%E5%BB%BA%E7%AB%8BOpenClaw%E7%9A%84%E7%92%B0%E5%A2%83</link>
+    <guid>https://www.clawdbot520.fyi/Note1%EF%BC%9A%E6%80%8E%E9%BA%BC%E5%BB%BA%E7%AB%8BOpenClaw%E7%9A%84%E7%92%B0%E5%A2%83</guid>
     <description><![CDATA[ 但是 準備一個硬體， 之前是看到很多人都推薦Mac Mini４是一個很平衡又划算的選擇，所以我就用這個主機當作示範 申請一個新的Apple帳號， Mac mini在開機的時候會引導你就照著指示做就可以 申請一個Google帳號， 到時候會有很多工具需要註冊你都可以用這個Google帳號一鍵註冊，可以省去很多key in的麻煩 申請一個通訊軟體的帳號 到時候你會透過通訊軟體請AI做事。一開始是比較推薦在本地端用TUI來和小龍蝦溝通會比較簡單， 因為要打通通訊軟體，有時候會遇到一些麻煩還是需要先打通本地端， 而且再透過通訊軟體轉一層也比較慢，不過很方便 註冊一個大語言模型 gpt, claude,... ]]></description>
     <pubDate>Fri, 20 Feb 2026 13:09:27 GMT</pubDate>
   </item><item>
     <title>進階變現</title>
-    <link>https://quartz.jzhao.xyz/%E9%80%B2%E9%9A%8E%E8%AE%8A%E7%8F%BE</link>
-    <guid>https://quartz.jzhao.xyz/%E9%80%B2%E9%9A%8E%E8%AE%8A%E7%8F%BE</guid>
+    <link>https://www.clawdbot520.fyi/%E9%80%B2%E9%9A%8E%E8%AE%8A%E7%8F%BE</link>
+    <guid>https://www.clawdbot520.fyi/%E9%80%B2%E9%9A%8E%E8%AE%8A%E7%8F%BE</guid>
     <description><![CDATA[ 4. ]]></description>
     <pubDate>Fri, 20 Feb 2026 12:47:49 GMT</pubDate>
   </item><item>
     <title>index</title>
-    <link>https://quartz.jzhao.xyz/</link>
-    <guid>https://quartz.jzhao.xyz/</guid>
+    <link>https://www.clawdbot520.fyi/</link>
+    <guid>https://www.clawdbot520.fyi/</guid>
     <description><![CDATA[ 歡迎來到我的 AI 筆記本. ]]></description>
     <pubDate>Fri, 20 Feb 2026 01:08:10 GMT</pubDate>
   </item><item>
     <title>Note2：怎麼架設知識分享網頁1：從零到自動化發布</title>
-    <link>https://quartz.jzhao.xyz/Note2%EF%BC%9A%E6%80%8E%E9%BA%BC%E6%9E%B6%E8%A8%AD%E7%9F%A5%E8%AD%98%E5%88%86%E4%BA%AB%E7%B6%B2%E9%A0%811%EF%BC%9A%E5%BE%9E%E9%9B%B6%E5%88%B0%E8%87%AA%E5%8B%95%E5%8C%96%E7%99%BC%E5%B8%83</link>
-    <guid>https://quartz.jzhao.xyz/Note2%EF%BC%9A%E6%80%8E%E9%BA%BC%E6%9E%B6%E8%A8%AD%E7%9F%A5%E8%AD%98%E5%88%86%E4%BA%AB%E7%B6%B2%E9%A0%811%EF%BC%9A%E5%BE%9E%E9%9B%B6%E5%88%B0%E8%87%AA%E5%8B%95%E5%8C%96%E7%99%BC%E5%B8%83</guid>
+    <link>https://www.clawdbot520.fyi/Note2%EF%BC%9A%E6%80%8E%E9%BA%BC%E6%9E%B6%E8%A8%AD%E7%9F%A5%E8%AD%98%E5%88%86%E4%BA%AB%E7%B6%B2%E9%A0%811%EF%BC%9A%E5%BE%9E%E9%9B%B6%E5%88%B0%E8%87%AA%E5%8B%95%E5%8C%96%E7%99%BC%E5%B8%83</link>
+    <guid>https://www.clawdbot520.fyi/Note2%EF%BC%9A%E6%80%8E%E9%BA%BC%E6%9E%B6%E8%A8%AD%E7%9F%A5%E8%AD%98%E5%88%86%E4%BA%AB%E7%B6%B2%E9%A0%811%EF%BC%9A%E5%BE%9E%E9%9B%B6%E5%88%B0%E8%87%AA%E5%8B%95%E5%8C%96%E7%99%BC%E5%B8%83</guid>
     <description><![CDATA[ 這篇筆記記錄了如何將 Obsidian 本地筆記轉化為個人技術部落格，並利用轉檔引擎Quartz，發步到GitHub Page上，之後更新好網站內容，可以一鍵發步到網站上． 1. ]]></description>
     <pubDate>Thu, 19 Feb 2026 16:00:00 GMT</pubDate>
   </item><item>
     <title>Note3：怎麼架設知識分享網頁2：用自己的網域建立變現的基礎設施</title>
-    <link>https://quartz.jzhao.xyz/Note3%EF%BC%9A%E6%80%8E%E9%BA%BC%E6%9E%B6%E8%A8%AD%E7%9F%A5%E8%AD%98%E5%88%86%E4%BA%AB%E7%B6%B2%E9%A0%812%EF%BC%9A%E7%94%A8%E8%87%AA%E5%B7%B1%E7%9A%84%E7%B6%B2%E5%9F%9F%E5%BB%BA%E7%AB%8B%E8%AE%8A%E7%8F%BE%E7%9A%84%E5%9F%BA%E7%A4%8E%E8%A8%AD%E6%96%BD</link>
-    <guid>https://quartz.jzhao.xyz/Note3%EF%BC%9A%E6%80%8E%E9%BA%BC%E6%9E%B6%E8%A8%AD%E7%9F%A5%E8%AD%98%E5%88%86%E4%BA%AB%E7%B6%B2%E9%A0%812%EF%BC%9A%E7%94%A8%E8%87%AA%E5%B7%B1%E7%9A%84%E7%B6%B2%E5%9F%9F%E5%BB%BA%E7%AB%8B%E8%AE%8A%E7%8F%BE%E7%9A%84%E5%9F%BA%E7%A4%8E%E8%A8%AD%E6%96%BD</guid>
+    <link>https://www.clawdbot520.fyi/Note3%EF%BC%9A%E6%80%8E%E9%BA%BC%E6%9E%B6%E8%A8%AD%E7%9F%A5%E8%AD%98%E5%88%86%E4%BA%AB%E7%B6%B2%E9%A0%812%EF%BC%9A%E7%94%A8%E8%87%AA%E5%B7%B1%E7%9A%84%E7%B6%B2%E5%9F%9F%E5%BB%BA%E7%AB%8B%E8%AE%8A%E7%8F%BE%E7%9A%84%E5%9F%BA%E7%A4%8E%E8%A8%AD%E6%96%BD</link>
+    <guid>https://www.clawdbot520.fyi/Note3%EF%BC%9A%E6%80%8E%E9%BA%BC%E6%9E%B6%E8%A8%AD%E7%9F%A5%E8%AD%98%E5%88%86%E4%BA%AB%E7%B6%B2%E9%A0%812%EF%BC%9A%E7%94%A8%E8%87%AA%E5%B7%B1%E7%9A%84%E7%B6%B2%E5%9F%9F%E5%BB%BA%E7%AB%8B%E8%AE%8A%E7%8F%BE%E7%9A%84%E5%9F%BA%E7%A4%8E%E8%A8%AD%E6%96%BD</guid>
     <description><![CDATA[ 🛠 Vercel + Cloudflare 協作筆記 這套架構的核心在於：Vercel 負責「住」（存儲與運算），Cloudflare 負責「門面與安全」（網域與防護）。 一、 為什麼要同時用這兩個？ Vercel：對 React、Quartz (Next.js/Node.js) 支援度最高，部署速度極快，且自動生成 SSL 憑證。 Cloudflare：全球最強的 DNS 解析、阻斷攻擊 (DDoS)、以及更靈活的網域管理功能。 Vercel (網站主體) 與 Cloudflare (網域與安全) 的純粹對接流程。這也是目前效能最優、設定最專業的架構。 二、 核心設定步驟：從網域到上線 1... ]]></description>
     <pubDate>Thu, 19 Feb 2026 16:00:00 GMT</pubDate>
   </item><item>
     <title>template</title>
-    <link>https://quartz.jzhao.xyz/template</link>
-    <guid>https://quartz.jzhao.xyz/template</guid>
+    <link>https://www.clawdbot520.fyi/template</link>
+    <guid>https://www.clawdbot520.fyi/template</guid>
     <description><![CDATA[  ]]></description>
     <pubDate>Thu, 19 Feb 2026 16:00:00 GMT</pubDate>
   </item>
