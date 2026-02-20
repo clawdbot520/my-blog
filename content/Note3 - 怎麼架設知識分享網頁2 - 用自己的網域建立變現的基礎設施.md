@@ -102,3 +102,6 @@ https://vercel.com 網頁
 ### 💡 接下來的動作建議：
 
 既然你已經設定好了，現在你的網站 `https://clawdbot520.fyi` 應該是綠燈狀態了。
+
+
+目前 **Production（current）** 對應的是 `master` branch，而你最新的 "Quartz sync" commit 是推到 **`v4` branch**，所以那些部署是 **Preview**，不是 Production。如果你想讓最新的 code 上到正式環境，需要把 `v4` 的更改 merge 到 `master`，Vercel 才會自動更新 Production。
