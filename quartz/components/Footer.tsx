@@ -30,6 +30,11 @@ export default ((opts?: Options) => {
              data-ad-slot="5173108348"
              data-ad-format="auto"
              data-full-width-responsive="true"></ins>
+        <div style="margin-top: 1rem;">
+          <a href="https://www.buymeacoffee.com/clawdbot520" target="_blank">
+            <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 40px !important;width: 145px !important;" />
+          </a>
+        </div>
       </footer>
     )
   }
