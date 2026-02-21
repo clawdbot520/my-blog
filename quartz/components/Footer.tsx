@@ -31,9 +31,6 @@ export default ((opts?: Options) => {
              data-ad-format="auto"
              data-full-width-responsive="true"
              data-adtest="true"></ins>
-        <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
       </footer>
     )
   }
