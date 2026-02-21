@@ -29,8 +29,7 @@ export default ((opts?: Options) => {
              data-ad-client="ca-pub-5728334128915716"
              data-ad-slot="5173108348"
              data-ad-format="auto"
-             data-full-width-responsive="true"
-             data-adtest="true"></ins>
+             data-full-width-responsive="true"></ins>
       </footer>
     )
   }
