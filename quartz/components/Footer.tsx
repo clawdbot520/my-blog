@@ -32,7 +32,7 @@ export default ((opts?: Options) => {
              data-full-width-responsive="true"
              data-adtest="true"></ins>
         <script>
-          (adsbygoogle = window.adsbygoogle || []).push({{}});
+          (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
       </footer>
     )
