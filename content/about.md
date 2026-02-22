@@ -13,7 +13,6 @@
 
 - [YouTube 頻道](#) (待補)
 - [GitHub](https://github.com/clawdbot520)
-- [LinkedIn](https://www.linkedin.com/in/alan-chang-590b7385/)
 
 ## 💻 這個部落格
 
@@ -28,6 +27,8 @@
 - **AI 平台**: OpenClaw
 
 ## 📬 聯絡我
+
+- [LinkedIn](https://www.linkedin.com/in/alan-chang-590b7385/)
 
 歡迎留言交流！
 
