@@ -4,9 +4,7 @@ import * as Component from "./quartz/components"
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
-  header: [
-    Component.Explorer({ title: "首頁", folderDefaultState: "collapsed" }),
-  ],
+  header: [],
   afterBody: [],
   footer: Component.Footer({
     links: {
