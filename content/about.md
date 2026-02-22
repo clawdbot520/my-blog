@@ -11,6 +11,7 @@
 
 - [YouTube 頻道](#) (待補)
 - [GitHub](https://github.com/clawdbot520)
+- [LinkedIn](https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit)
 
 ## 💻 這個部落格
 
