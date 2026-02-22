@@ -10,7 +10,7 @@
 ## 📺 我的頻道
 
 - [YouTube 頻道](#) (待補)
-- [GitHub](#) (待補)
+- [GitHub](https://github.com/clawdbot520)
 
 ## 💻 這個部落格
 
