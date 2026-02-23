@@ -3,11 +3,5 @@
   "outputDirectory": "public",
   "installCommand": "npm ci",
   "framework": null,
-  "cleanUrls": true,
-  "rewrites": [
-    {
-      "source": "/google5be65ce7e87718cf.html",
-      "destination": "/google5be65ce7e87718cf.html"
-    }
-  ]
+  "cleanUrls": false
 }
