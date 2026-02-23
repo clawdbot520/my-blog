@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npx quartz build",
+  "buildCommand": "npx quartz build && cp google5be65ce7e87718cf.html public/",
   "outputDirectory": "public",
   "installCommand": "npm ci",
   "framework": null,
