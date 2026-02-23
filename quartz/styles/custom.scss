@@ -34,18 +34,19 @@ article {
   padding: 2rem;
 }
 
-// 標題樣式
+// 標題樣式 - 使用 !important 確保覆蓋
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   line-height: 1.3;
   margin-top: 1.5em;
   margin-bottom: 0.5em;
-  color: #1a1a1a;
+  color: #1a1a1a !important;
 }
 
 h1 {
   font-size: 2.25rem;
   margin-top: 0;
+  color: #1a1a1a !important;
 }
 
 h2 {
