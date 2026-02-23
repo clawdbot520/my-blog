@@ -111,7 +111,124 @@ table {
   }
 }
 
+// ============================================
+// 手機直屏優化 - iPhone 閱讀體驗
+// ============================================
+
+@media screen and (max-width: 600px) {
+  // 導航列優化
+  .nav-header {
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    
+    a {
+      font-size: 0.9rem;
+      white-space: nowrap;
+      padding: 0.25rem 0;
+    }
+  }
+  
+  // 文章區域 - 手機適配
+  article {
+    padding: 1.25rem;
+    font-size: 17px; // iOS 舒適閱讀尺寸
+    line-height: 1.75;
+  }
+  
+  // 標題大小 - 適合手機螢幕
+  h1 {
+    font-size: 1.75rem;
+    line-height: 1.25;
+  }
+  
+  h2 {
+    font-size: 1.4rem;
+  }
+  
+  h3 {
+    font-size: 1.15rem;
+  }
+  
+  h4, h5, h6 {
+    font-size: 1rem;
+  }
+  
+  // 段落 - 避免太寬
+  p {
+    margin-bottom: 1.1em;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  // 區塊引用 - 手機適配
+  blockquote {
+    margin: 1.25em 0;
+    padding: 0.875rem;
+    font-size: 0.95em;
+    border-left-width: 3px;
+  }
+  
+  // 代碼區塊 - 手機橫向捲動
+  pre {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    font-size: 0.85rem;
+    padding: 0.875rem;
+    border-radius: 6px;
+  }
+  
+  code {
+    font-size: 0.9em;
+  }
+  
+  // 表格 - 橫向捲動
+  table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    font-size: 0.9rem;
+    margin: 1.25em 0;
+  }
+  
+  // 圖片 - 響應式
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+  
+  // 列表 - 觸控友善
+  ul, ol {
+    padding-left: 1.5rem;
+    
+    li {
+      margin-bottom: 0.5em;
+    }
+  }
+  
+  // 連結 - 觸控區域加大
+  a {
+    padding: 2px 0;
+  }
+  
+  // 確保 h1 標題不超過螢幕寬
+  h1, h2, h3 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+}
+
+// ============================================
 // 暗色模式支援
+// ============================================
+
 @media (prefers-color-scheme: dark) {
   .nav-header {
     background: var(--light);
@@ -123,6 +240,44 @@ table {
       &:hover {
         color: var(--secondary);
       }
+    }
+  }
+  
+  // 手機暗色模式優化
+  @media screen and (max-width: 600px) {
+    article {
+      // 暗色模式文字稍微亮一點，便於閱讀
+      color: #e8e8e8;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+      color: #f0f0f0;
+    }
+    
+    blockquote {
+      background: rgba(255, 255, 255, 0.05);
+    }
+    
+    table th {
+      background: rgba(255, 255, 255, 0.08);
+    }
+  }
+}
+
+// ============================================
+// iPhone Safe Area 支援
+// ============================================
+
+@supports (padding: max(0px)) {
+  @media screen and (max-width: 600px) {
+    article {
+      padding-left: max(1.25rem, env(safe-area-inset-left));
+      padding-right: max(1.25rem, env(safe-area-inset-right));
+    }
+    
+    .nav-header {
+      padding-left: max(1rem, env(safe-area-inset-left));
+      padding-right: max(1rem, env(safe-area-inset-right));
     }
   }
 }
