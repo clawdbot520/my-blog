@@ -8,7 +8,7 @@ description: 克勞豹的 AI 學習筆記，記錄 OpenClaw 教學、自動化�
 
 ---
 
-# 🐆 克勞豹 OpenClaw 部落格
+#   🦭克勞豹 OpenClaw 部落格
 
 歡迎來到我的 AI 學習筆記！這裡記錄了我如何從零開始學習 OpenClaw，並用它來架網站、自動化任務、管理知識。
 
