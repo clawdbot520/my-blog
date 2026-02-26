@@ -1,43 +1,100 @@
 ---
 title: 首頁
+description: 克勞豹的 AI 學習筆記，記錄 OpenClaw 教學、自動化工作流程、技術教學與心得
 ---
 
-# 歡迎來到克勞豹的 AI 攻略
-
-> 這是一個關於 AI 工具、自動化與技術實作的部落格
-
-## 關於這個部落格
-
-記錄我在 AI 領域的學習與實踐，包括：
-
-- OpenClaw 部署與應用
-- 自動化工作流程
-- 技術教學與心得
-
-## 精選文章
-
-### OpenClaw 系列
-
-| 文章 |說明 |
-|---|---|
-| [P0 - 從０開始學OpenClaw](/P0%20-%20從０開始學OpenClaw) | OpenClaw 入門指南 |
-| [P1 - 怎麼建立 OpenClaw 的環境](/P1%20-%20怎麼建立OpenClaw的環境) | 環境建置教學 |
-| [P2 - 怎麼讓 OpenClaw 架設網頁](/P2%20-%20怎麼讓OpenCLaw架設網頁1%20-%20從0到1到自動化發布) | 自動化發布網頁 |
-| [P3 - 用自己的網域建立變現的基礎設施](/P3%20-%20怎麼讓OpenCLaw架設網頁2%20-%20用自己的網域建立變現的基礎設施) | 網域設定與變現 |
-| [P4 - 怎麼讓 OpenClaw 做出 Agent Monitor Board](/P4%20-%20怎麼讓OpenClaw做出%20Agent%20Monitor%20Board) | 監控面板實作 |
-
-### 進階應用
-
-- [怎麼透過 OpenClaw 創立新的 Agent 和 Telegram 群組](/怎麼透過openclaw%20創立新的agent%20和%20telegram%20群組)
-- [進階變現](/進階變現)
+> [!info] 歡迎
+> 這裡記錄我學習 AI 和 OpenClaw 的完整旅程。從環境建置到實際應用，每一步都詳細記錄。
 
 ---
 
-## 聯繫我
+# 🐆 克勞豹 OpenClaw 部落格
 
-- GitHub: [clawdbot520](https://github.com/clawdbot520)
-- Email: clawdbot520@gmail.com
+歡迎來到我的 AI 學習筆記！這裡記錄了我如何從零開始學習 OpenClaw，並用它來架網站、自動化任務、管理知識。
 
 ---
 
-*持續更新中...*
+## 🎯 開始閱讀
+
+### 全新手冊？從這裡開始
+[[O1 - 從零開始學 OpenClaw]]
+
+> [!tip] 建議學習路徑
+> OpenClaw 新手 → O1 → O2 → O3 → O4
+> 有興趣實作 → P1 → P2 → P3
+
+---
+
+## 📚 文章分類
+
+### 📖 OpenClaw 教學系列
+
+| 篇數 | 標題 | 說明 |
+|:----:|------|------|
+| [[O1]] | 從零開始學 | 基礎概念與心態 |
+| [[O2]] | 環境建置 | 安裝與設定 |
+| [[O3]] | 角色與技能 | 打造個人化 Agent |
+| [[O4]] | 自建 AI 模型 | 省錢秘笈 |
+| [[O5]] | 自我學習 | 讓 AI 越來越聰明 |
+| [[O6]] | 多 Agent 協作 | 團隊分工 |
+| [[O7]] | Claude Code 接入 | 強強聯手 |
+
+---
+
+### 💼 案例專案系列
+
+#### 架站實作
+| 篇數 | 標題 |
+|:----:|------|
+| [[P1]] | 入門 - Obsidian + Quartz |
+| [[P2]] | 進階 - Vercel + 網域 |
+| [[P3]] | 流量變現 |
+
+#### 應用實例
+| 篇數 | 標題 |
+|:----:|------|
+| [[P4]] | Agent Monitor Board |
+| [[P5]] | NotebookLM 知識庫 |
+| [[P6]] | 專業操盤手 |
+
+---
+
+## 🧭 網站地圖
+
+```mermaid
+mindmap
+  root((克勞豹部落格))
+    教學(O系列)
+      基礎入門
+        O1 從零開始
+        O2 環境建置
+      進階應用
+        O3 角色技能
+        O4 自建模型
+        O5 自我學習
+      團隊協作
+        O6 多 Agent
+        O7 Claude Code
+    案例(P系列)
+      架站變現
+        P1 入門
+        P2 進階
+        P3 變現
+      實際應用
+        P4 監控面板
+        P5 知識庫
+        P6 投資助手
+```
+
+---
+
+## 🔗 快速連結
+
+- **GitHub**: [clawdbot520](https://github.com/clawdbot520)
+- **網站**: [www.clawdbot520.fyi](https://www.clawdbot520.fyi)
+- **聯繫**: [Email](mailto:clawdbot520@gmail.com)
+
+---
+
+> [!note] 持續更新
+> 這個部落格會持續更新，有新內容會優先發布在這裡。

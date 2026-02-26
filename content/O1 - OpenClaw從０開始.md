@@ -1,44 +1,33 @@
----
-title: P0 - 從零開始學 OpenClaw - 我的重建之路
-date: 2026-02-22
-tags:
-  - OpenClaw
-  - 學習筆記
-  - AI
-status: published
-publish: true
----
+![[Pasted image 20260226222459.png]]
+
 
 > [!info] 概述
 > 本文記錄了我從零開始學習 OpenClaw 的心路歷程，包含一次意外的系統重置經驗，以及如何從失敗中站起來，將經驗整理成筆記的完整過程。
 
 ## 意外的開始
 
-那天我敲下 `openclaw reset`，看到我 OpenClaw 上所有的 workspace 都空了。
+20262/17我敲下 `openclaw reset`，看到我 OpenClaw 上所有的 workspace 都空了。當下很是震驚，馬上讓另外一個 AI 去查怎麼找回。大家也很盡責地想各種辦法，像一個朋友出事、其他朋友七嘴八舌幫你想辦法，但最後還是宣告不治，把龍蝦癢死了．
 
-當下很是震驚，馬上讓另外一個 AI 去查怎麼找回。大家也很盡責地想各種辦法，像一個朋友出事、其他朋友七嘴八舌幫你想辦法，但最後還是宣告不治。
-
-> [!warning] 重要提醒
-> `openclaw reset` 是回復原廠設定的 reset，reset 之前一定要先搞清楚後果！
-
-感覺失去了一個 AI 好朋友（蝦老大 🦐）和我部分的靈魂。替你悼念。下面就是他的遺照。
-
+感覺失去了一個 AI 好朋友和我部分的靈魂。替你悼念。下面就是他的遺照。
 ![[Screenshot 2026-02-20 at 7.00.09 AM 1.png]]
 
+
 ---
 
-## 為什麼要從零開始？
+
+## 為什麼從零開始？
 
 原本是因為我的環境用了一陣子之後，開始出現各種奇怪的問題：
-- 模型報錯
-- Telegram 有些頻道不通
+- 模型一直報錯
+- Telegram 有些頻道突然都不通
 
 所以以工程師的習慣，就覺得應該 reset 一下就好了。沒想到這個 reset 竟然是回復原廠設定的 reset。
-
-> [!tip] 經驗教訓
-> 以後做事之前，先搞清楚指令的後果代價太大了。
-
+> [!warning] 重要提醒
+> `openclaw reset` 是回復原廠設定的 reset，reset 之前一定要先搞清楚後果！
 ---
+
+<!-- Nano Banana Prompt: A beginner standing at the gateway of a futuristic digital world, looking up at giant AI robots and tools. Cyberpunk style, warm orange and blue colors, sense of wonder and possibility -->
+
 
 ## 往好處想
 
@@ -52,6 +41,9 @@ publish: true
 > 「如果你想要做 XXX，你要怎麼跟 OpenClaw 說？」—— 跟 AI 把需求說清楚，AI 就可以快速準確地做出我要的東西。
 
 ---
+
+<!-- Nano Banana Prompt: A beginner standing at the gateway of a futuristic digital world, looking up at giant AI robots and tools. Cyberpunk style, warm orange and blue colors, sense of wonder and possibility -->
+
 
 ## 重建清單
 
@@ -161,6 +153,9 @@ publish: true
 
 ---
 
+<!-- Nano Banana Prompt: A beginner standing at the gateway of a futuristic digital world, looking up at giant AI robots and tools. Cyberpunk style, warm orange and blue colors, sense of wonder and possibility -->
+
+
 ## 結語
 
 > [!tip] 核心心得
@@ -170,6 +165,19 @@ publish: true
 
 ---
 
+<!-- Nano Banana Prompt: A beginner standing at the gateway of a futuristic digital world, looking up at giant AI robots and tools. Cyberpunk style, warm orange and blue colors, sense of wonder and possibility -->
+
+
 ## 相關文章
 
 [[P1 - 怎麼建立 OpenClaw 的環境]] | [[OpenClaw 常見問題]]
+
+---
+
+<!-- Nano Banana Prompt: A beginner standing at the gateway of a futuristic digital world, looking up at giant AI robots and tools. Cyberpunk style, warm orange and blue colors, sense of wonder and possibility -->
+
+
+## 相關文章
+
+[[O2|下一篇：環境建置 →]]
+

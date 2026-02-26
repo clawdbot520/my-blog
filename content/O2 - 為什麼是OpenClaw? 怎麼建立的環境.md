@@ -1,5 +1,7 @@
 ---
-title: P1 - 怎麼建立OpenClaw的環境
+
+title: O2 - 怎麼建立OpenClaw的環境
+description: 詳細教學如何在 Mac Mini 上建立 OpenClaw 開發環境
 date: 2026-02-21
 tags:
   - OpenClaw
@@ -7,16 +9,20 @@ tags:
   - 環境建置
 status: published
 publish: true
+
+<!-- Nano Banana Prompt: A sleek Mac Mini on a modern desk, surrounded by connection lines and icons of Telegram, API keys, and cloud services. Clean tech aesthetic, blue and white color scheme -->
 ---
+![[Pasted image 20260226222752.png]]
 
 > [!info] 概述
 > ## 🤖 OpenClaw 是什麼？
 
-想像一下，你有一台會說話的**超級機器人**，但它平常只會關在屋子裡跟你聊天。
+平常大家用的AI主要都是在對話窗的使用，問問題，或是拿來寫程式。
 
-**OpenClaw** 就像是幫這個機器人裝上了**「手、腳和眼睛」**，讓它不只能說話，還能走出屋子幫你完成任務。
+今天有了OpenClaw 就像是幫這個機器人裝上了「手、腳和眼睛」，讓它不只能說話，還能走出屋子幫你完成任務，能操控你電腦中的一切事物，就像你在使用電腦一樣。這聽起來很厲害，但是反過來也很危險，如果AI理解錯你的意思，做了一些不可挽回的事情，那就很麻煩，甚至很危險．所以還是要小心謹慎，勁量不要部署在你本來就存放很多重要東西的電腦上，找一個新的獨立的家來養龍蝦．
 
 ---
+
 
 ### 🌟 它在做什麼？（三大特異功能）
 
@@ -28,6 +34,7 @@ publish: true
     
 
 ---
+
 
 ### 💡 總結一句話：
 
@@ -107,6 +114,15 @@ openclaw onboard --install-daemon
 
 ---
 
+
 ## 相關筆記
 
 [[Note2 - 怎麼利用OpenCLaw架設網頁]]
+
+---
+
+
+## 相關文章
+
+[[O3|下一篇：角色與技能 →]]
+
