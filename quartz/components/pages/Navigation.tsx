@@ -5,7 +5,7 @@ const Navigation: QuartzComponent = ({ }: QuartzComponentProps) => {
     <nav class="nav-header">
       <a href="/">首頁</a>
       <a href="/about">關於我</a>
-      <a href="https://clawdbot520.fyi/contact">聯繫我</a>
+      <a href="/tags/OpenClaw">OpenClaw</a>
       <a href="/tags/案例">案例</a>
     </nav>
   )
