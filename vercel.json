@@ -3,5 +3,5 @@
   "outputDirectory": "public",
   "installCommand": "npm ci",
   "framework": null,
-  "cleanUrls": false
+  "cleanUrls": true
 }
