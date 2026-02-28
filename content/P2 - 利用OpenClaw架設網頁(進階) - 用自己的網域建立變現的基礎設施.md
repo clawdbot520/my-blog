@@ -36,7 +36,7 @@ prompt: A castle on a cloud with flags of Vercel and Cloudflare, connected to th
 到 https://www.cloudflare.com/ 搜尋喜歡的網域名稱並購買。
 
 > [!tip] 價格
-> 便宜的 $5~$15 一年，我買最便宜的 $4 試試水溫。
+> 便宜的 $5 ~ $15 一年，我買最便宜的 $4 試試水溫。
 
 ### 步驟 2: 驗證 Email
 

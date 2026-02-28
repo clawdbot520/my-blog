@@ -120,7 +120,7 @@ chmod +x ~/.claude/hooks/on-stop.sh
 
 ```json
 {
-  "from": "7683093090",
+  "from": "7683093123",
   "text": "幫我寫一個登入 API",
   "workdir": "~/my-project"
 }
