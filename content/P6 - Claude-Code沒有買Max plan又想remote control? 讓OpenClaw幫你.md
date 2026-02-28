@@ -179,4 +179,4 @@ chmod +x ~/.claude/hooks/on-stop.sh
 
 ## 相關連結
 
-（完）
+[[P7 - 利用OpenClaw架設網頁(流量變現)|下一篇：P7 - 利用OpenClaw架設網頁(流量變現)]]
