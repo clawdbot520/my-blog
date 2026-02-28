@@ -9,4 +9,5 @@ tags:
   - 架網頁
   - OpenClaw
 publish: true
+prompt: A castle on a cloud with flags of Vercel and Cloudflare, connected to the internet galaxy. Professional cloud infrastructure, blue sky and white clouds, majestic fortress
 

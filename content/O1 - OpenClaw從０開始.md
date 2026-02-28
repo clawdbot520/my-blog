@@ -6,6 +6,7 @@ tags:
   - 從零開始
 date: 2026-02-20
 publish: true
+prompt: A beginner standing at the gateway of a futuristic digital world, looking up at giant AI robots and tools. Cyberpunk style, warm orange and blue colors, sense of wonder and possibility
 ---
 
 ![[Pasted image 20260226222459.png]]

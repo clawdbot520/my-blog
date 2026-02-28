@@ -7,6 +7,7 @@ tags:
   - Claude Code
 date: 2026-02-28
 publish: true
+prompt: A smartphone controlling a powerful computer remotely, with Telegram icons and AI robot. Remote control concept, cyan and orange contrast, futuristic UI
 ---
 ![[Screenshot 2026-02-28 at 10.23.24 AM 1.png]]
 

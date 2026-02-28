@@ -7,4 +7,5 @@ tags:
   - NotebookLM
   - 知識庫
 publish: true
+prompt: An AI brain connected to a library of books and documents, with a search light finding the right answer. Knowledge base concept, warm golden light, library of Alexandria vibes
 

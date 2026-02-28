@@ -7,4 +7,5 @@ tags:
   - AI
   - 學習
 publish: true
+prompt: An AI robot learning from books, with light bulbs appearing above its head. Trees growing from books symbolizing growth. Warm learning atmosphere, orange and yellow tones
 

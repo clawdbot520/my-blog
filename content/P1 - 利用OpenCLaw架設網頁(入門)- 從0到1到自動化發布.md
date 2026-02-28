@@ -10,6 +10,7 @@ tags:
   - 架網頁
   - OpenClaw
 publish: true
+prompt: A person building a beautiful website from scratch, with Obsidian notes floating and transforming into a Quartz crystal castle. Digital garden concept, warm sunset colors
 
 ---
 

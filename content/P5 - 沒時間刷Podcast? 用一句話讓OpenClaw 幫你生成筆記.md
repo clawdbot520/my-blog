@@ -8,6 +8,7 @@ tags:
   - Whisper
 date: 2026-02-27
 publish: true
+prompt: A microphone transforming into text, with podcast waves converting to written notes. AI transcription concept, purple and blue gradient, modern tech style
 ---
 ![[Pasted image 20260228103857.png]]
 > [!info] 概述

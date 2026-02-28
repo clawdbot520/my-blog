@@ -7,4 +7,5 @@ tags:
   - 教學
   - 環境建置
 publish: true
+prompt: A cozy home office setup with Mac Mini, glowing terminal screens, and AI robot assistant. Warm lighting, minimalist desk, technology meets comfort
 
