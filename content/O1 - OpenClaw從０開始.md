@@ -36,23 +36,6 @@ publish: true
 > `openclaw reset` 是回復原廠設定的 reset，reset 之前一定要先搞清楚後果！
 ---
 
-<!-- Nano Banana Prompt: A beginner standing at the gateway of a futuristic digital world, looking up at giant AI robots and tools. Cyberpunk style, warm orange and blue colors, sense of wonder and possibility -->
-
-
-## 往好處想
-
-每當發生一件壞事，我總會讓自己去想他的好處是什麼。
-
-往好處想，就是為什麼我不從 0 開始，把我之前做的東西重新再做一遍？用簡單的說明，希望我國小的兩個小朋友也可以透過我的筆記按圖索驥，能像爸爸一樣從 0 學習使用 AI。
-
-稍微總結一下過去這一陣子做過的研究和專案，基本上都是圍繞著解決我的問題展開：
-
-> [!abstract] 核心目標
-> 「如果你想要做 XXX，你要怎麼跟 OpenClaw 說？」—— 跟 AI 把需求說清楚，AI 就可以快速準確地做出我要的東西。
-
----
-
-<!-- Nano Banana Prompt: A beginner standing at the gateway of a futuristic digital world, looking up at giant AI robots and tools. Cyberpunk style, warm orange and blue colors, sense of wonder and possibility -->
 
 
 ## 重建清單
@@ -163,19 +146,6 @@ publish: true
 
 ---
 
-<!-- Nano Banana Prompt: A beginner standing at the gateway of a futuristic digital world, looking up at giant AI robots and tools. Cyberpunk style, warm orange and blue colors, sense of wonder and possibility -->
-
-
-## 結語
-
-> [!tip] 核心心得
-> 想要讓 AI 幫你做事，關鍵在於「把需求說清楚」。技術細節參考參考就好，重點是要能夠準確地表達你的目的。
-
-這些筆記會陸續補齊，也會放到部落格上跟大家分享。
-
----
-
-<!-- Nano Banana Prompt: A beginner standing at the gateway of a futuristic digital world, looking up at giant AI robots and tools. Cyberpunk style, warm orange and blue colors, sense of wonder and possibility -->
 
 
 ## 相關文章
@@ -183,11 +153,4 @@ publish: true
 [[P1 - 怎麼建立 OpenClaw 的環境]] | [[OpenClaw 常見問題]]
 
 ---
-
-<!-- Nano Banana Prompt: A beginner standing at the gateway of a futuristic digital world, looking up at giant AI robots and tools. Cyberpunk style, warm orange and blue colors, sense of wonder and possibility -->
-
-
-## 相關文章
-
-[[O2|下一篇：環境建置 →]]
 
