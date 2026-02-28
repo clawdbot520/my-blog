@@ -7,7 +7,6 @@ tags:
   - ClaudeCode
   - Project
   - 專案
-status: published
 publish: true
 
 <!-- Nano Banana Prompt: A futuristic command center with multiple screens showing AI agent conversations and thinking processes. Like Mission Control for AI, cyberpunk dashboard, blue and green data visualization -->

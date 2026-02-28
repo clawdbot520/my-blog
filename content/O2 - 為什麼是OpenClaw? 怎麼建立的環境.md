@@ -6,7 +6,6 @@ tags:
   - OpenClaw
   - 教學
   - 環境建置
-status: published
 publish: true
 
 <!-- Nano Banana Prompt: A sleek Mac Mini on a modern desk, surrounded by connection lines and icons of Telegram, API keys, and cloud services. Clean tech aesthetic, blue and white color scheme -->

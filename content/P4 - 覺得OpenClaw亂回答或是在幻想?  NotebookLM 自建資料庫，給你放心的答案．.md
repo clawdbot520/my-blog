@@ -6,7 +6,6 @@ tags:
   - OpenClaw
   - NotebookLM
   - 知識庫
-status: published
 publish: true
 
 <!-- Nano Banana Prompt: A wise AI librarian organizing infinite books and documents, with a glowing knowledge brain in the background. Library of the future, warm amber and blue colors -->

@@ -9,7 +9,6 @@ tags:
   - GitHub
   - 架網頁
   - OpenClaw
-status: published
 publish: true
 
 <!-- Nano Banana Prompt: A peaceful village with houses made of knowledge books, connected by digital paths. Obsidian crystal and Quartz gemstone glowing in the center. Fantasy book village, warm cozy colors -->

@@ -8,7 +8,6 @@ tags:
   - Cloudflare
   - 架網頁
   - OpenClaw
-status: published
 publish: true
 
 <!-- Nano Banana Prompt: A castle on a cloud with flags of Vercel and Cloudflare, connected to the internet galaxy. Professional cloud infrastructure, blue sky and white clouds, majestic fortress -->
@@ -26,7 +25,6 @@ publish: true
 
 ---
 
-status: published
 publish: false
 
 ### 二、 核心設定步驟：從網域到上線
@@ -66,7 +64,6 @@ https://vercel.com 網頁
 
 ---
 
-status: published
 publish: false
 
 ### 三、 Quartz 專案的對應調整
@@ -90,7 +87,6 @@ publish: false
 
 ---
 
-status: published
 publish: false
 
 ### 四、 常見問題排查 (Troubleshooting)
@@ -103,7 +99,6 @@ publish: false
 
 ---
 
-status: published
 publish: false
 
 ### 五、 進階技巧：自動化流程
@@ -117,7 +112,6 @@ publish: false
 
 ---
 
-status: published
 publish: false
 
 ### 💡 接下來的動作建議：

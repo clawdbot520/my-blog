@@ -4,7 +4,6 @@ title: O5 - 一個 OpenClaw 不夠用，角色切來切去失憶，怎麼解決�
 date: 2026-02-22
 tags:
   - OpenClaw
-status: published
 publish: true
 
 <!-- Nano Banana Prompt: A robot reading books and making notes, with light bulbs appearing above its head. Trees growing from books symbolizing growth. Warm learning atmosphere, orange and yellow tones -->

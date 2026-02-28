@@ -7,7 +7,6 @@ tags:
   - 自動化
   - Whisper
 date: 2026-02-27
-status: published
 publish: true
 ---
 ![[Pasted image 20260228103857.png]]
