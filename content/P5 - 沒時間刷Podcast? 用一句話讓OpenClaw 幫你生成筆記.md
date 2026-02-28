@@ -6,7 +6,7 @@ tags:
   - AI
   - 自動化
   - Whisper
-  - 專案
+  - 案例
 date: 2026-02-27
 publish: true
 prompt: A microphone transforming into text, with podcast waves converting to written notes. AI transcription concept, purple and blue gradient, modern tech style

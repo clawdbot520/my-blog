@@ -5,6 +5,7 @@ tags:
   - 自動化
   - 工作流
   - ClaudeCode
+  - 案例
 date: 2026-02-28
 publish: true
 prompt: A smartphone controlling a powerful computer remotely, with Telegram icons and AI robot. Remote control concept, cyan and orange contrast, futuristic UI
