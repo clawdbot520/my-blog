@@ -1,3 +1,14 @@
+---
+title: O1 - OpenClaw 從零開始
+tags:
+  - OpenClaw
+  - 教學
+  - 從零開始
+date: 2026-02-20
+status: published
+publish: true
+---
+
 ![[Pasted image 20260226222459.png]]
 
 
