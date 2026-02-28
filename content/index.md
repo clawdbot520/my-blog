@@ -9,7 +9,7 @@ publish: true
 
 ---
 
-#   🦭克勞豹 OpenClaw 部落格
+# 🦭克勞豹 OpenClaw 部落格
 
 歡迎來到我的 AI 學習筆記！這裡記錄了我如何從零開始學習 OpenClaw，並用它來架網站、自動化任務、管理知識。
 
@@ -55,8 +55,9 @@ publish: true
 | 篇數 | 標題 |
 |:----:|------|
 | [[P4]] | Agent Monitor Board |
-| [[P5]] | NotebookLM 知識庫 |
-| [[P6]] | 專業操盤手 |
+| [[P5]] | Podcast 轉文字筆記 |
+| [[P6]] | Claude Code 遠端控制 |
+| [[PN]] | 專業操盤手 |
 
 ---
 
@@ -83,8 +84,9 @@ mindmap
         P3 變現
       實際應用
         P4 監控面板
-        P5 知識庫
-        P6 投資助手
+        P5 Podcast 筆記
+        P6 遠端控制
+        PN 投資助手
 ```
 
 ---
