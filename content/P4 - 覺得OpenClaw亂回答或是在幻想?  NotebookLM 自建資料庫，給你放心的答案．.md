@@ -1,6 +1,5 @@
 ---
 title: P4 - 覺得 Openclaw 亂回答或是在幻想？NotebookLM 自建資料庫
-description: 使用 NotebookLM 自建資料庫，讓 AI 回答更準確
 date: 2026-02-23
 tags:
   - 案例

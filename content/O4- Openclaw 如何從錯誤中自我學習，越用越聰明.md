@@ -1,7 +1,6 @@
 ---
 
 title: O4 - OpenClaw 如何從錯誤中自我學習，越用越聰明
-description: 讓 OpenClaw 從錯誤中學習，越用越聰明的最佳實踐
 date: 2026-02-23
 tags:
   - OpenClaw

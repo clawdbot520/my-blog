@@ -1,6 +1,5 @@
 ---
 title: P6 - Claude Code 沒有買 Max plan 又想遠端控制？讓 OpenClaw 幫你
-description: 免費實現 Claude Code 遠端控制，OpenClaw + Telegram 替代方案
 tags:
   - OpenClaw
   - 自動化

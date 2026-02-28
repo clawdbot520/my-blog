@@ -1,7 +1,6 @@
 ---
 
 title: O5 - 一個 OpenClaw 不夠用，角色切來切去失憶，怎麼解決？
-description: 解決多個 Agent 切換時失憶的問題
 date: 2026-02-22
 tags:
   - OpenClaw

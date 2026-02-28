@@ -1,7 +1,6 @@
 ---
 
 title: O2 - 怎麼建立OpenClaw的環境
-description: 詳細教學如何在 Mac Mini 上建立 OpenClaw 開發環境
 date: 2026-02-21
 tags:
   - OpenClaw

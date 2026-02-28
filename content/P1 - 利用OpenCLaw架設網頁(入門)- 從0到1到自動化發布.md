@@ -1,7 +1,6 @@
 ---
 
 title: P1 - 利用 OpenCLaw 架設網頁（入門）- 從 0 到 1 到自動化發布
-description: 利用 OpenClaw 從零開始架設靜態部落格，使用 Obsidian + Quartz + GitHub Pages
 date: 2026-02-20
 tags:
   - 案例

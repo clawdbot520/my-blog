@@ -1,7 +1,6 @@
 ---
 
 title: P2 - 怎麼利用 OpenCLaw 架設網頁 2 - 用自己的網域建立變現的基礎設施
-description: 進階教學：使用 Vercel + Cloudflare 網域建立變現基礎設施
 date: 2026-02-20
 tags:
   - 案例

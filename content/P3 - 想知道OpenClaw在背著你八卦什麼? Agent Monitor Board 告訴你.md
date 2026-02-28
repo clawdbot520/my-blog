@@ -1,6 +1,5 @@
 ---
 title: P3 - 想知道 OpenClaw 在背著你八卦什麼？Agent Monitor Board 告訴你
-description: 建立 Agent Monitor Board 即時監看 AI Agent 的行動與思考過程
 date: 2026-02-22
 tags:
   - 案例
