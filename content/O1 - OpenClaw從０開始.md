@@ -1,10 +1,10 @@
 ---
 title: O1 - OpenClaw 從零開始
+date: 2026-02-20
 tags:
   - OpenClaw
   - 教學
   - 從零開始
-date: 2026-02-20
 publish: true
 prompt: A beginner standing at the gateway of a futuristic digital world, looking up at giant AI robots and tools. Cyberpunk style, warm orange and blue colors, sense of wonder and possibility
 ---
@@ -151,7 +151,7 @@ prompt: A beginner standing at the gateway of a futuristic digital world, lookin
 
 ## 相關文章
 
-[[P1 - 怎麼建立 OpenClaw 的環境]] | [[OpenClaw 常見問題]]
+[[O2 - 為什麼是OpenClaw? 怎麼建立的環境|下一篇：O2 - 為什麼是OpenClaw? 怎麼建立的環境]]
 
 ---
 

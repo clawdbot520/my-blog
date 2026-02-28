@@ -1,5 +1,4 @@
 ---
-
 title: O4 - OpenClaw 如何從錯誤中自我學習，越用越聰明
 date: 2026-02-23
 tags:
@@ -7,5 +6,121 @@ tags:
   - AI
   - 學習
 publish: true
-prompt: An AI robot learning from books, with light bulbs appearing above its head. Trees growing from books symbolizing growth. Warm learning atmosphere, orange and yellow tones
+prompt: A robot reading books and making notes, with light bulbs appearing above its head. Trees growing from books symbolizing growth. Warm learning atmosphere, orange and yellow tones
+---
 
+![[Pasted image 20260226224433.png]]
+
+> [!info] 來源
+> OpenClaw/Claude Code 創始人 Srishti 分享的最佳實踐
+
+![[Pasted image 20260223231917.png]]
+
+---
+
+> [!tip] 核心概念
+> 跟 OpenClaw 說「請你把以下內容加到 agents.md 中」，它就會幫你記住。以後每次上工就會先複習，避免再次犯錯。
+
+---
+
+## 1. 自我改進循環
+
+```
+用戶修正 → 寫入 tasks/lessons.md → 下次開工前複習 → 應用
+```
+
+| 步驟 | 說明 |
+|------|------|
+| 犯錯當下立刻記錄 | 錯誤、根因、預防 |
+| 同一錯 2 次 | 升級成 AGENTS.md 硬規則 |
+
+---
+
+## 2. Plan Mode 觸發
+
+| 情況 | 動作 |
+|------|------|
+| 3+ 步驟 | 進入規劃模式 |
+| 架構決策 | 需要規劃 |
+| 驗證環節 | 不可或缺 |
+| 出錯 | 立刻停止，重新規劃 |
+
+---
+
+## 3. 驗收關卡
+
+> [!question] Done 前必問
+> - 怎麼證明有效？
+> - Staff engineer 會點頭嗎？
+> - 舊 vs 新行為差異？
+
+---
+
+## 4. 追求優雅
+
+| 情況 | 建議 |
+|------|------|
+| 非平凡修改 | 問「有更優方式嗎？」 |
+| 臨時補丁 | 基於現在認知做優雅方案 |
+| 簡單修復 | 別過度設計 |
+
+---
+
+## 5. 自主修復缺陷
+
+> [!warning] 原則
+> - 收到 bug → 直接動手修
+> - 給出 log/錯誤 → 然後修好
+> - 不等使用者說「怎麼修」
+
+---
+
+## 6. 任務追蹤系統
+
+| 檔案 | 用途 |
+|------|------|
+| `tasks/todo.md` | 當前任務 + 完成記錄 + 回顧 |
+| `tasks/lessons.md` | 錯誤模式 + 預防規則 |
+
+---
+
+## 7. 工作流編排
+
+### 規劃節點
+- 非平凡任務（3 步以上或涉及架構決策）→ 進入規劃模式
+- 事情偏離軌道 → 立即停止並重新規劃
+- 提前編寫詳細規格說明以減少歧義
+
+### 子代理策略
+- 使用子代理保持主上下文整潔
+- 研究、探索任務卸載給子代理
+- 複雜問題投入更多計算資源
+- 每個子代理專注執行單一任務
+
+---
+
+## 8. 核心原則
+
+| 原則 | 說明 |
+|------|------|
+| 簡潔優先 | 每次修改影響最少代碼 |
+| 拒絕偷懶 | 找到根本原因，保持資深開發者標準 |
+| 最小影響 | 只觸及必要部分，避免引入缺陷 |
+
+---
+
+> [!success] 完成前驗證
+> - 未經證明有效絕不標記任務完成
+> - 對比主版本與修改後的行為差異
+> - 問自己：「資深工程師會認可嗎？」
+> - 執行測試、檢查日誌、證明正確性
+
+---
+
+*持續更新中...*
+
+---
+
+## 相關連結
+
+[[O5 - 一個OpenClaw不夠用，角色切來切去失憶，怎麼解決？|下一篇：O5 - 一個OpenClaw不夠用，角色切來切去失憶，怎麼解決？]]

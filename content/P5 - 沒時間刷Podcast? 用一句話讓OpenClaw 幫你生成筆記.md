@@ -6,6 +6,7 @@ tags:
   - AI
   - 自動化
   - Whisper
+  - 專案
 date: 2026-02-27
 publish: true
 prompt: A microphone transforming into text, with podcast waves converting to written notes. AI transcription concept, purple and blue gradient, modern tech style
@@ -170,4 +171,6 @@ python3 scripts/transcribe.py --podcast "測試" --help
 
 ---
 
-*建立於 2026-02-27*
+## 相關連結
+
+[[P6 - Claude-Code沒有買Max plan又想remote control? 讓OpenClaw幫你|下一篇：P6 - Claude-Code沒有買Max plan又想remote control? 讓OpenClaw幫你]]

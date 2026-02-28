@@ -4,12 +4,12 @@ tags:
   - OpenClaw
   - 自動化
   - 工作流
-  - Claude Code
+  - ClaudeCode
 date: 2026-02-28
 publish: true
 prompt: A smartphone controlling a powerful computer remotely, with Telegram icons and AI robot. Remote control concept, cyan and orange contrast, futuristic UI
 ---
-![[Screenshot 2026-02-28 at 10.23.24 AM 1.png]]
+![[Pasted image 20260228115112.png]]
 
 
 > [!info] 概述
@@ -173,6 +173,9 @@ chmod +x ~/.claude/hooks/on-stop.sh
 - [Claude Code Remote Control 文檔](https://code.claude.com/docs/en/remote-control)
 - [OpenClaw Skills - Claude Code Bridge](https://github.com/clawdbot520/awesome-openclaw_skills/tree/main/claude-code-bridge)
 
+
 ---
 
-*建立於 2026-02-28*
+## 相關連結
+
+（完）
