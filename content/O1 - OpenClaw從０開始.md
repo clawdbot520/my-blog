@@ -1,5 +1,6 @@
 ---
 title: O1 - OpenClaw 從零開始
+description: 從零開始學習 OpenClaw 的心路歷程與重建筆記
 tags:
   - OpenClaw
   - 教學

@@ -1,5 +1,6 @@
 ---
 title: P5 - 沒時間刷 Podcast？用一句話讓 OpenClaw 幫你生成筆記
+description: 自動將 Podcast 轉為文字稿，用一句話生成重點筆記
 tags:
   - OpenClaw
   - Podcast
