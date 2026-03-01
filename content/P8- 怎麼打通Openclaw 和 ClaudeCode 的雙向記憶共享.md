@@ -10,6 +10,8 @@ publish: true
 prompt: Two AI robots shaking hands, sharing brain waves, digital memory data flowing between them, neural network connection, blue and orange colors, futuristic tech
 ---
 
+![[Pasted image 20260301203811.png]]
+
 > [!info] 概述
 > 打通 OpenClaw 與 Claude Code 的雙向記憶共享，讓兩個 AI 系統可以互相存取對方的記憶。
 
