@@ -44,6 +44,7 @@ prompt: A cozy digital garden with glowing crystal flowers, representing knowled
 | [[P4 - 覺得OpenClaw亂回答或是在幻想?  NotebookLM 自建資料庫，給你放心的答案．]]      | NotebookLM 知識庫         |
 | [[P5 - 沒時間刷Podcast? 用一句話讓OpenClaw 幫你生成筆記]]                   | Podcast 轉文字            |
 | [[P6 - Claude-Code沒有買Max plan又想remote control? 讓OpenClaw幫你]] | Claude Code 遠端控制       |
+| [[P8 - 怎麼打通Openclaw 和 ClaudeCode 的雙向記憶共享]] | 雙向記憶共享           |
 
 ---
 
