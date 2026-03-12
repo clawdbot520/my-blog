@@ -7,6 +7,7 @@ tags:
   - remoat
   - bridge
 publish: true
+prompt: Telegram app connected to Antigravity IDE via digital bridge, remote control interface, mobile phone and laptop, blue and purple colors, futuristic
 ---
 
 ## 目標
