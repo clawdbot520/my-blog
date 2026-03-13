@@ -220,6 +220,8 @@ const Landing: QuartzComponent = ({ fileData, displayClass }: QuartzComponentPro
 }
 
 Landing.css = `
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
+
 :root {
   --neon-orange: #ff5733;
   --cyber-blue: #0ea5e9;
@@ -228,8 +230,8 @@ Landing.css = `
   --text-muted: #475569;
   --glass-bg: rgba(255, 255, 255, 0.6);
   --border-color: rgba(15, 23, 42, 0.1);
-  --font-display: 'Syncopate', sans-serif;
-  --font-body: 'Space Grotesk', sans-serif;
+  --font-display: 'Syncopate', "Noto Sans TC", "PingFang TC", sans-serif;
+  --font-body: 'Space Grotesk', "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
 }
 
 [saved-theme='dark'] {
