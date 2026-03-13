@@ -7,6 +7,7 @@ tags:
   - OpenClaw
   - 自動化
   - CLI
+  - 案例
 publish: true
 prompt: Terminal command line interface with Google Workspace logos, automation gears, blue Google colors and orange OpenClaw colors, futuristic productivity dashboard
 ---

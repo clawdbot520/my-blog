@@ -8,6 +8,7 @@ tags:
   - OpenClaw
   - ClaudeCode
   - Antigravity
+  - 案例
 publish: true
 prompt: Three AI robots pushing  "Kanban cards" on a digital board, automated workflow arrows, "Obsidian" logo, blue orange purple colors, futuristic task management
 ---

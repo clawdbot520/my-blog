@@ -220,8 +220,6 @@ const Landing: QuartzComponent = ({ fileData, displayClass }: QuartzComponentPro
 }
 
 Landing.css = `
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
-
 :root {
   --neon-orange: #ff5733;
   --cyber-blue: #0ea5e9;

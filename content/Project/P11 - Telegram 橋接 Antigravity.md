@@ -6,10 +6,11 @@ tags:
   - telegram
   - remoat
   - bridge
+  - 案例
 publish: true
 prompt: Telegram app connected to Antigravity IDE via digital bridge, remote control interface, mobile phone and laptop, blue and purple colors, futuristic
 ---
-
+![[Pasted image 20260312143449.png]]
 ## 目標
 
 讓 Telegram 可以直接跟 Antigravity IDE對話，從手機遠端操控 Antigravity。

@@ -7,6 +7,7 @@ tags:
   - cct
   - 橋接
   - 自動化
+  - 案例
 publish: true
 prompt: Claude robot connected to Telegram via glowing bridge, smartphone showing chat interface, headless terminal in background, blue and white colors, futuristic remote control
 ---

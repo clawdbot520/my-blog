@@ -151,6 +151,3 @@ npx quartz sync
 
 ---
 
-## 相關連結
-
-[[P3 - 想知道OpenClaw在背著你八卦什麼? Agent Monitor Board 告訴你|下一篇：P3 - 想知道OpenClaw在背著你八卦什麼? Agent Monitor Board 告訴你]]

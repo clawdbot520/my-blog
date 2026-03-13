@@ -119,6 +119,3 @@ google.com, pub-xxxxxxxxxxxxxx, DIRECT, f08c47fecxxxxxx
 
 ---
 
-## 相關連結
-
-（完）
