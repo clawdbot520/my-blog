@@ -10,9 +10,9 @@ const Landing: QuartzComponent = ({ fileData, displayClass }: QuartzComponentPro
 
   return (
     <div class={classNames(displayClass, "cyber-marine-landing")}>
-      {/* Immersive Background Layers */}
-      <div class="grain-overlay"></div>
-      <div class="mesh-gradient"></div>
+      {/* Minimalist Background Layers */}
+      <div class="dot-pattern"></div>
+      <div class="aura-glow"></div>
       <div class="glow-point p1"></div>
       <div class="glow-point p2"></div>
 
@@ -78,8 +78,9 @@ const Landing: QuartzComponent = ({ fileData, displayClass }: QuartzComponentPro
             <div class="intro-reveal">
               <span class="shimmer-text">PROTOCOL V1.0.0 ACTIVE</span>
             </div>
-            <h1 class="glitch-title" data-text="定義未來生產力">
-              掌握 AI 時代的<br/><span class="accent-glow">進階指揮權</span>
+            <h1 class="modern-title">
+              打造你專屬的<br/>
+              <span class="gradient-text">數位AI代理人</span>
             </h1>
             <p class="hero-lead">
               跨越單向對話的局限，建構具備自主執行力的數位分身。我們將複雜技術轉化為專業級自動化動力，助您實現真正的技術自由。
@@ -221,62 +222,61 @@ const Landing: QuartzComponent = ({ fileData, displayClass }: QuartzComponentPro
 
 Landing.css = `
 :root {
-  --neon-orange: #ff5733;
-  --cyber-blue: #0ea5e9;
-  --deep-ocean: #f8fafc;
-  --text-main: #0f172a;
-  --text-muted: #475569;
-  --glass-bg: rgba(255, 255, 255, 0.6);
-  --border-color: rgba(15, 23, 42, 0.1);
-  --font-display: 'Syncopate', "Noto Sans TC", "PingFang TC", sans-serif;
-  --font-body: 'Space Grotesk', "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  --accent-main: #6366f1;
+  --accent-soft: #818cf8;
+  --bg-main: #fcfcfc;
+  --text-main: #1f2937;
+  --text-muted: #6b7280;
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --border-color: rgba(0, 0, 0, 0.06);
+  --font-display: 'Plus Jakarta Sans', "Noto Sans TC", sans-serif;
+  --font-body: 'Inter', "Noto Sans TC", sans-serif;
 }
 
 [saved-theme='dark'] {
-  --deep-ocean: #050a15;
-  --text-main: #ffffff;
-  --text-muted: rgba(255, 255, 255, 0.6);
-  --glass-bg: rgba(10, 20, 40, 0.6);
-  --border-color: rgba(255, 255, 255, 0.1);
+  --bg-main: #0a0a0a;
+  --text-main: #f9fafb;
+  --text-muted: #9ca3af;
+  --glass-bg: rgba(17, 24, 39, 0.7);
+  --border-color: rgba(255, 255, 255, 0.08);
 }
 
 .cyber-marine-landing {
-  background-color: var(--deep-ocean);
+  background-color: var(--bg-main);
   color: var(--text-main);
-  transition: background-color 0.5s ease, color 0.5s ease;
+  transition: all 0.5s ease;
   font-family: var(--font-body);
   position: relative;
   min-height: 100vh;
 }
 
-/* Background Effects */
-.grain-overlay {
-  position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-  background-image: url('https://grain-y.vercel.app/noise.svg');
-  opacity: 0.05; pointer-events: none; z-index: 100;
+/* Minimalist Effects */
+.dot-pattern {
+  position: fixed; inset: 0; z-index: -2;
+  background-image: radial-gradient(var(--border-color) 1px, transparent 1px);
+  background-size: 24px 24px;
 }
 
-.mesh-gradient {
-  position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-  background: 
-    radial-gradient(at 0% 0%, rgba(14, 165, 233, 0.15) 0px, transparent 50%),
-    radial-gradient(at 100% 100%, rgba(255, 87, 51, 0.1) 0px, transparent 50%);
-  z-index: -2;
+.aura-glow {
+  position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  width: 100vw; height: 100vh;
+  background: radial-gradient(circle at center, var(--accent-soft) 0%, transparent 60%);
+  opacity: 0.1; z-index: -1; pointer-events: none;
 }
 
 .glow-point {
-  position: fixed; width: 60vw; height: 60vw;
-  border-radius: 50%; filter: blur(120px); z-index: -1; opacity: 0.2;
+  position: fixed; border-radius: 50%; filter: blur(100px); z-index: -1; opacity: 0.15;
 }
-.p1 { background: var(--cyber-blue); top: -20%; right: -10%; }
-.p2 { background: var(--neon-orange); bottom: -20%; left: -10%; }
+.p1 { background: var(--accent-main); top: -10%; right: 10%; width: 40vw; height: 40vw; }
+.p2 { background: var(--accent-soft); bottom: -10%; left: 10%; width: 50vw; height: 50vw; }
 
 /* Navigation */
 .glass-nav {
   position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border-color);
-  background: rgba(5, 10, 21, 0.4);
+  background: rgba(255, 255, 255, 0.4);
+  [saved-theme='dark'] & { background: rgba(0, 0, 0, 0.4); }
 }
 
 .nav-container {
@@ -325,33 +325,53 @@ Landing.css = `
 
 /* Hero */
 .hero-section {
-  height: 100vh; display: flex; flex-direction: column;
+  height: 80vh; display: flex; flex-direction: column;
   justify-content: center; align-items: center; text-align: center;
   position: relative; padding: 0 1rem;
 }
 
-.shimmer-text {
-  font-family: var(--font-display); font-size: 0.7rem; letter-spacing: 0.4em;
-  color: var(--cyber-blue); margin-bottom: 1.5rem; display: block;
+.modern-title {
+  font-family: var(--font-display); font-size: clamp(2.5rem, 8vw, 5rem);
+  font-weight: 800; color: var(--text-main); margin: 0; line-height: 1.1;
+  letter-spacing: -0.02em;
+  animation: float-up 1.2s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
-.glitch-title {
-  font-family: var(--font-display); font-size: clamp(3rem, 10vw, 7rem);
-  font-weight: 700; color: var(--text-main); margin: 0; line-height: 0.9;
-  text-transform: uppercase;
-  transition: color 0.3s;
+.gradient-text {
+  background: linear-gradient(135deg, var(--accent-main), var(--accent-soft));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.accent-glow {
-  color: var(--neon-orange);
-  text-shadow: 0 0 30px rgba(255, 87, 51, 0.5);
+@keyframes float-up {
+  from { opacity: 0; transform: translateY(30px); filter: blur(10px); }
+  to { opacity: 1; transform: translateY(0); filter: blur(0); }
 }
 
 .hero-lead {
-  font-size: 1.5rem; max-width: 700px;
-  color: var(--text-muted); margin: 2rem 0 3.5rem;
-  line-height: 1.6; font-weight: 300;
-  transition: color 0.3s;
+  font-size: 1.25rem; max-width: 650px;
+  color: var(--text-muted); margin: 2rem 0 3rem;
+  line-height: 1.6; font-weight: 400;
+  animation: float-up 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
+}
+
+.text-reveal-step1 { animation: blur-in 1s cubic-bezier(0, 0, 0.2, 1) both; }
+.text-reveal-step2 { animation: blur-in 1s cubic-bezier(0, 0, 0.2, 1) 0.2s both; }
+.text-reveal-step3 { 
+  animation: blur-in 1.2s cubic-bezier(0, 0, 0.2, 1) 0.4s both, shimmer 3s infinite linear;
+  background: linear-gradient(90deg, var(--neon-orange), #fff, var(--neon-orange));
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes shimmer {
+  to { background-position: 200% center; }
+}
+
+@keyframes blur-in {
+  from { opacity: 0; filter: blur(20px); transform: scale(0.9); }
+  to { opacity: 1; filter: blur(0); transform: scale(1); }
 }
 
 .hero-cta-group { display: flex; gap: 2rem; }
@@ -411,9 +431,16 @@ Landing.css = `
 .card-small {
   background: var(--glass-bg); padding: 2.5rem; border: 1px solid var(--border-color);
   border-radius: 8px; text-decoration: none !important; display: flex; gap: 2rem;
-  transition: 0.3s;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative; overflow: hidden;
 }
-.card-small:hover { background: rgba(255,255,255,0.05); border-color: var(--cyber-blue); transform: translateX(10px); }
+.card-small:hover { 
+  background: var(--light); 
+  border-color: var(--cyber-blue); 
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  [saved-theme='dark'] & { background: rgba(255, 255, 255, 0.05); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); }
+}
 
 .card-num { font-family: var(--font-display); font-size: 1.2rem; color: var(--cyber-blue); opacity: 0.5; }
 .card-body h4 { margin: 0 0 0.5rem; color: var(--text-main); font-size: 1.3rem; }
@@ -435,10 +462,20 @@ Landing.css = `
   display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 4rem;
 }
 .matrix-item {
-  background: rgba(255,255,255,0.02); border: 1px solid var(--border-color);
-  padding: 2.5rem; text-decoration: none !important; transition: 0.3s;
+  background: var(--glass-bg); border: 1px solid var(--border-color);
+  padding: 2.5rem; text-decoration: none !important; transition: all 0.3s ease;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
 }
-.matrix-item:hover { background: var(--cyber-blue); border-color: transparent; scale: 1.05; }
+
+.matrix-item:hover { 
+  transform: translateY(-8px);
+  border-color: var(--accent-soft);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+[saved-theme='dark'] .matrix-item:hover { background: #111; }
 
 .m-head { display: flex; justify-content: space-between; margin-bottom: 2rem; }
 .m-id { font-family: var(--font-display); font-size: 0.7rem; color: var(--neon-orange); }
