@@ -10,12 +10,13 @@ tags:
   - sdd
   - 案例
 publish: true
-prompt: A futuristic digital brain concept with Obsidian notes flowing into a glowing vector database, dark background with teal and purple neural network connections, minimalist tech aesthetic
-summary: 用 sync_obsidian.py 在 Obsidian 存檔時自動把 frontmatter summary 推入 LanceDB Pro。Agent 看摘要快速定位，需要細節再去看 .md。BGE-M3 本地 embedding，支援 check_duplicate 防重。腳本位於 ~/repos/kanban-agent-teams/scripts/。
+socialImage: https://www.clawdbot520.fyi/attachment/p20_obsidian_lancedb_sync.png
+image: attachment/p20_obsidian_lancedb_sync.png
+cover: attachment/p20_obsidian_lancedb_sync.png
+prompt: A detailed architectural flow from a stylized Obsidian vault (crystal/book icon) into a hexagonal vector database lattice (LanceDB), teal energy connections, dark mode aesthetic
+summary: 透過 MCP-Bridge 將 Obsidian 筆記同步至 LanceDB Pro 雲端與本地端。實作 `obsidian_sync.py` 監聽檔案變更，自動執行 BGE-M3 Embedding 並寫入向量庫，實現「隨寫即搜」的即時記憶基礎。
 ---
-
-![[p20_obsidian_lancedb_sync.png]]
-
+![[Screenshot 2026-03-25 at 4.08.19 PM.png]]
 ## 1. 系統概述 (System Overview)
 
 **專案背景**：Obsidian 是人類看的知識庫，LanceDB Pro 是 AI Agent 的記憶庫。兩者原本互不相通——這套系統讓 Obsidian 存檔事件自動觸發 summary 推送，讓小歐、小安、小可都能語意搜尋你的筆記。

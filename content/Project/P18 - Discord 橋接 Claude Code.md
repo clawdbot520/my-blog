@@ -9,10 +9,9 @@ tags:
   - integration
   - 案例
 publish: true
+socialImage: https://www.clawdbot520.fyi/attachment/p18_claude_discord.png
 ---
-
-![[p18_claude_discord.png]]
-
+![[Screenshot 2026-03-25 at 4.06.13 PM.png]]
 ## 目標
 
 將 Claude Code（小可）接上 Discord，讓用戶可以透過 Discord 頻道或私訊（DM）直接與 Claude Code 互動。

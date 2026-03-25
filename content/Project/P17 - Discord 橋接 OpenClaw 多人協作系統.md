@@ -1,19 +1,22 @@
 ---
 title: P17 - Discord 橋接 OpenClaw 多人協作系統
-date: 2026-03-19
+date: 2026-03-24
 tags:
   - project
   - discord
   - openclaw
-  - multi-agent
+  - integration
   - sdd
   - 案例
 publish: true
-prompt: A futuristic Discord interface with multiple AI agents communicating across different channels, teal and purple neural network connections, dark background with glowing message bubbles
-summary: 透過 OpenClaw Discord Channel 將多個 AI Agent 接入 Discord Server，支援頻道分流（不同頻道綁定不同 Agent）與多 Bot 模式，設定走 openclaw.json bindings。
+socialImage: https://www.clawdbot520.fyi/attachment/p17_discord_openclaw.png
+image: attachment/p17_discord_openclaw.png
+cover: attachment/p17_discord_openclaw.png
+prompt: A futuristic Discord interface with glowing teal chat bubbles and stylized AI agent avatars (robots/minimalist heads) interacting, dark background, cyberpunk-neon influence
+summary: 透過 Discord 官方 Bot API 將 OpenClaw 接入 Discord 頻道。支援多人 @ 機器人、執行 Shell 指令、存取本地 MCP Server 工具，實現「像真人一樣在群組裡寫代碼」的協作體驗。
 ---
+![[Screenshot 2026-03-25 at 4.06.13 PM.png]]
 
-![[p17_discord_openclaw.png]]
 
 ## 1. 系統概述 (System Overview)
 
