@@ -10,6 +10,7 @@ tags:
   - sdd
   - 案例
 publish: true
+socialImage: attachment/p21_obsidian_notebooklm.png
 image: attachment/p21_obsidian_notebooklm.png
 cover: attachment/p21_obsidian_notebooklm.png
 prompt: An Obsidian vault glowing with AI intelligence, local model chip replacing cloud brain, teal knowledge graph connections flowing through a notebook interface, dark minimalist aesthetic
