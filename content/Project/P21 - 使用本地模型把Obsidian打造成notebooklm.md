@@ -10,12 +10,12 @@ tags:
   - sdd
   - 案例
 publish: true
+image: attachment/p21_obsidian_notebooklm.png
+cover: attachment/p21_obsidian_notebooklm.png
 prompt: An Obsidian vault glowing with AI intelligence, local model chip replacing cloud brain, teal knowledge graph connections flowing through a notebook interface, dark minimalist aesthetic
 summary: 用 Obsidian Copilot Plugin 接上本地 oMLX LLM（Qwen2.5-3B）與 bge-m3 Embedding，開啟 Vault QA 功能，實現對整個 Obsidian 知識庫的語意問答，完全本地無隱私疑慮。
 ---
-
-![[p21_obsidian_notebooklm.png]]
-
+![[Screenshot 2026-03-25 at 4.08.19 PM.png]]
 ## 1. 系統概述 (System Overview)
 
 **專案背景**：Google NotebookLM 可以對上傳的文件提問，但資料要送到雲端。這套方案讓 Obsidian 做到同樣的事：用本地 LLM 對話、本地 Embedding 向量搜尋，所有資料留在本機。
