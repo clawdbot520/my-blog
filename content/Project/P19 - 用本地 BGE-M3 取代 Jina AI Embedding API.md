@@ -1,4 +1,3 @@
-```
 ---
 title: P19 - 用本地 BGE-M3 取代 Jina AI Embedding API
 date: 2026-03-24
@@ -6,17 +5,18 @@ tags:
   - project
   - embedding
   - bge-m3
-  - privacy
+  - lancedb
   - sdd
   - 案例
 publish: true
-socialImage: https://www.clawdbot520.fyi/attachment/p19_local_embedding.png
 image: attachment/p19_local_embedding.png
-cover: attachment/p19_local_embedding.png
+socialImage: https://www.clawdbot520.fyi/attachment/p19_local_embedding.png
 prompt: Minimalist black-and-white icon set in Notion style. An icon of a cloud with a thin strike-through line, and a beautiful minimalist icon of a local server or computer with several small dot patterns symbolizing embeddings. A simple, clean arrow links them. Elegant, flat, professional line-art. Light gray background. No tech-sci-fi neon. Dedicated to local AI privacy.
 summary: 將原本依賴 Jina AI 的雲端 Embedding 流程改為本地運行 BGE-M3。使用 Python Flask 搭建微服務封裝 `FlagEmbedding`，實現毫秒級、零成本、高隱私且支援多語言的向量化處理。
 ---
-![[Screenshot 2026-03-25 at 4.21.37 PM.png]]
+
+![[p19_local_embedding.png]]
+
 ## 1. 系統概述 (System Overview)
 
 **專案背景**：Jina AI 是雲端服務，每次 embedding 都送資料出去，有 API key 洩漏風險與成本問題。替換為本地 BGE-M3 後：零成本、零延遲、零隱私疑慮，且與現有 LanceDB 1024 維向量完全相容，不需重建索引。

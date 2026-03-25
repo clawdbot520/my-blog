@@ -1,6 +1,6 @@
 ---
-title: P18 - Discord 橋接 Claude Code（小可）
-date: 2026-03-19
+title: P18 - Discord 橋接 Claude Code
+date: 2026-03-24
 tags:
   - discord
   - claude-code
@@ -9,8 +9,12 @@ tags:
   - integration
   - 案例
 publish: true
+image: attachment/p18_claude_discord.png
 socialImage: https://www.clawdbot520.fyi/attachment/p18_claude_discord.png
+prompt: A robot silhouette representing Claude sits in a modern virtual cafe, teal holographic interface, cozy atmosphere, focus on remote coding control via Discord mobile app
+summary: 將 Claude Code（Max Plan）透過 Discord 橋接器實現遠端操控。重點在於 node.js 監聽 discord 訊息並透過 child_process.spawn 與 Claude Code 交互，達成手機操控桌機進行開發的能力。
 ---
+![[p18_claude_discord.png]]
 ![[Screenshot 2026-03-25 at 4.06.13 PM.png]]
 ## 目標
 

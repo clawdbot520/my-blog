@@ -151,7 +151,7 @@ Memory MCP 採用 **stdio 協議**：Claude Code 透過 stdin/stdout 與 server.
 
 ### `recall(query, top_k?, agent_filter?)`
 
-關鍵詞搜尋記憶（目前為文字匹配，非向量搜尋）。
+向量語意搜尋記憶（透過 Jina AI embedding 做相似度比對）。
 
 ```json
 輸入：
@@ -165,12 +165,15 @@ Memory MCP 採用 **stdio 協議**：Claude Code 透過 stdin/stdout 與 server.
   {
     "memory_id": "ca7e269d",
     "content": "memory-mcp timestamp 必須用毫秒...",
-    "score": 1.0,
+    "score": 0.92,
     "tags": ["bug", "lancedb"],
     "agent": "agent:claude-code"
   }
 ]
 ```
+
+> [!note] score 說明
+> score = `1 - _distance`（LanceDB 向量距離轉換），越接近 1.0 越相似。不需要精準關鍵詞，語意相近即可召回。
 
 ---
 
@@ -370,7 +373,7 @@ table.add([{ ...row, "scope": "agent:claude-code" }])
 | Agent Monitor 看不到新記憶 | timestamp 用秒而非毫秒 | 確認 `time.time() * 1000` |
 | 向量搜尋查不到某筆記憶 | 存入了零向量 | 確認有呼叫 Jina API |
 | Sidebar 看不到某個代理的 scope | scope 沒有 `agent:` 前綴 | 用 delete + reinsert 遷移 |
-| `recall()` 回傳空 | 文字匹配，查詢詞要精準 | 換同義詞或用 `list_facts` |
+| `recall()` 回傳空 | 查詢語意差距太大 | 換更接近語意的詞，或用 `list_facts` 精確過濾 |
 | Jina API 403 | 用了 Python urllib | 改用 curl subprocess |
 
 ---
@@ -442,3 +445,204 @@ def safe_remember(content, tags, agent):
 - [[設計規格 - Memory MCP Server]] — 原始三方設計共識
 - [[P8 - 怎麼打通Openclaw 和 ClaudeCode 的雙相記憶共享]] — 記憶共享背景
 - [[P3 - 想知道 OpenClaw 在背著你八卦什麼Agent Monitor Board 告訴你]] — Agent Monitor 使用
+
+---
+
+# V2 — Agent Monitor 統一 HTTP API（2026-03-18）
+
+> [!info] V2 概述
+> 在 V1（MCP STDIO 各自 spawn）基礎上，將向量搜尋能力整合進 Agent Monitor 的 Express server，讓所有 Agent 只需打一個 HTTP endpoint 就能做語意搜尋，不需要 spawn 任何進程。
+
+## V2 架構變化
+
+### V1 問題點
+```
+小可 → spawn server.py (Python, STDIO, 1:1 私有)
+小安 → 自己 spawn 另一份 server.py（環境問題導致 EOF）
+小歐 → 直接 import lancedb（不走 MCP）
+→ 三方各自為政，小安 PATH 問題難解
+```
+
+### V2 解法
+```
+Agent Monitor（Electron, 持續在跑, port 3002）
+  ├─ GET /api/lancedb/vector-search  ← 語意向量搜尋（新增）
+  ├─ GET /api/lancedb/search         ← 關鍵詞 FTS（UI 用）
+  ├─ GET /api/lancedb/memories       ← 列表（UI 用）
+  ├─ POST /api/lancedb/memories      ← 新增（改用真實 embedding）
+  └─ DELETE /api/lancedb/memories/:id
+
+        ↑              ↑              ↑
+      小可            小安            小歐
+   (HTTP call)    (HTTP call)    (HTTP or 直接 import)
+```
+
+## 新增 API
+
+### `GET /api/lancedb/vector-search`
+
+語意向量搜尋，呼叫 Jina AI 生成 embedding 後做 ANN 搜尋。
+
+```
+參數：
+  q      (string, required) — 查詢字串
+  scope  (string, optional) — 限定 scope，如 agent:claude-code
+  limit  (number, optional) — 回傳筆數，預設 5
+
+回應：
+[
+  {
+    "id": "...",
+    "text": "...",
+    "scope": "agent:antigravity",
+    "category": "fact",
+    "importance": 0.85,
+    "timestamp": 1773637996324,
+    "score": 0.92          ← 相似度（1 - distance），越高越相關
+  }
+]
+```
+
+**小安使用範例：**
+```python
+import requests
+results = requests.get("http://localhost:3002/api/lancedb/vector-search",
+                       params={"q": "MCP 記憶搜尋", "limit": 5}).json()
+```
+
+### `POST /api/lancedb/memories`（V2 修正）
+
+V1 使用零向量（`[0.0] * 1024`），導致記憶無法被向量搜尋找到。
+V2 改為呼叫 Jina API 生成真實 embedding 後寫入。
+
+## 修復項目
+
+| 問題 | V1 | V2 |
+|------|----|----|
+| 小安無法用向量搜尋 | ❌ 需自行 spawn server.py | ✅ HTTP 一行搞定 |
+| UI 新增記憶用零向量 | ❌ 搜不到 | ✅ 真實 embedding |
+| recall() 用關鍵詞匹配 | ❌ 語意差距大查不到 | ✅ 向量相似度 |
+
+## V2 驗收（2026-03-18）
+
+| 項目 | 狀態 |
+|------|------|
+| `GET /api/lancedb/vector-search?q=MCP` 回傳相關記憶 | ✅ |
+| score 欄位正確（0~1）| ✅ |
+| scope filter 正常運作 | ✅ |
+| POST 新增記憶有真實 embedding | ✅ |
+| Agent Monitor rebuild 成功 | ✅ |
+
+---
+
+# V3 — Agent Monitor 統一 MCP Server（2026-03-18）
+
+> [!info] V3 概述
+> 將 Memory MCP 與 Task Kanban MCP 整合進 Agent Monitor 的 Express server，以 MCP over HTTP/SSE 協議對外提供服務。所有 Agent 連同一個 URL，不再各自 spawn Python 進程。
+
+## 架構演進
+
+```
+V1：各自 spawn Python subprocess（STDIO，1:1 私有）
+V2：Agent Monitor 加入 REST vector-search（HTTP，但非 MCP）
+V3：Agent Monitor 本身成為 MCP Server（HTTP/SSE，多 client 共用）
+```
+
+## 連線資訊
+
+```
+MCP Server URL: http://localhost:3002/mcp/sse
+協議: MCP over HTTP/SSE（標準 MCP 協議）
+```
+
+## 可用工具（11 個）
+
+**Memory 工具：**
+
+| 工具 | 說明 |
+|------|------|
+| `remember` | 寫入記憶（自動生成 Jina embedding）|
+| `recall` | 向量語意搜尋 |
+| `list_facts` | 條件過濾列表 |
+| `check_duplicate` | 重複偵測 |
+| `forget` | 刪除記憶 |
+
+**Kanban 工具：**
+
+| 工具 | 說明 |
+|------|------|
+| `get_board` | 取得看板全貌 |
+| `get_task` | 取得任務詳情 |
+| `create_task` | 建立新任務 |
+| `move_card` | 搬移卡片狀態 |
+| `trigger_job` | 觸發 job.sh |
+| `list_tasks_by_status` | 列出特定狀態任務 |
+
+## 各 Agent 連線方式
+
+**小可（Claude Code）— claude.json 設定：**
+```json
+{
+  "mcpServers": {
+    "memory-mcp":  { "url": "http://localhost:3002/mcp/sse" },
+    "task-kanban": { "url": "http://localhost:3002/mcp/sse" }
+  }
+}
+```
+
+**小安（Antigravity）— 直接 HTTP：**
+```python
+import requests
+
+# 建立連線，取得 sessionId
+sse = requests.get("http://localhost:3002/mcp/sse", stream=True)
+for line in sse.iter_lines():
+    if line.startswith(b"data:"):
+        endpoint = json.loads(line[5:])["uri"]
+        session_id = endpoint.split("sessionId=")[1]
+        break
+
+# 呼叫工具
+resp = requests.post(
+    f"http://localhost:3002/mcp/message?sessionId={session_id}",
+    json={"jsonrpc":"2.0","id":1,"method":"tools/call",
+          "params":{"name":"recall","arguments":{"query":"MCP 記憶"}}}
+)
+```
+
+**小歐（OpenClaw）— 如支援 MCP client：**
+```
+URL: http://localhost:3002/mcp/sse
+```
+如不支援 MCP，直接用 REST API：
+```
+GET http://localhost:3002/api/lancedb/vector-search?q=<query>&limit=5
+```
+
+## MCP 協議流程
+
+```
+1. GET  /mcp/sse
+   ← event: endpoint
+   ← data: {"uri": "/mcp/message?sessionId=<uuid>"}
+
+2. POST /mcp/message?sessionId=<uuid>
+   Body: {"jsonrpc":"2.0","id":1,"method":"tools/call",
+          "params":{"name":"recall","arguments":{"query":"..."}}}
+   ← 202 Accepted（回應透過 SSE 推送）
+
+3. SSE stream 收到：
+   event: message
+   data: {"result":{"content":[{"type":"text","text":"..."}]},"id":1,"jsonrpc":"2.0"}
+```
+
+## V3 驗收（2026-03-18）
+
+| 項目 | 狀態 |
+|------|------|
+| `GET /mcp/sse` 回傳 endpoint event | ✅ |
+| `tools/list` 回傳 11 個工具 | ✅ |
+| `get_board` 正確回傳看板狀態 | ✅ |
+| `recall` 向量搜尋正常 | ✅ |
+| claude.json 改用 URL 模式 | ✅ |
+| 不再 spawn Python subprocess | ✅ |

@@ -9,9 +9,8 @@ tags:
   - sdd
   - 案例
 publish: true
-socialImage: https://www.clawdbot520.fyi/attachment/p23_zeroclaw.png
 image: attachment/p23_zeroclaw.png
-cover: attachment/p23_zeroclaw.png
+socialImage: https://www.clawdbot520.fyi/attachment/p23_zeroclaw.png
 prompt: A minimalist Notion-style illustration of a small black box (TV box) with a single teal glowing diode. Next to it is a simple line-art icon of a Mac Mini. They are connected by a clean, thin dotted line symbolizing a data link. The background is pure white or very light gray. The overall style is flat, clean, and uses limited colors, like an official Notion help document or a clean tech manual. Minimalist and elegant.
 summary: 將閒置 Droidlogic X10 電視盒（Android 11, 2GB RAM）安裝 ZeroClaw，透過 SSH tunnel 從 Mac mini 連線操作。關鍵技巧：假 UI dist 資料夾跳過 build、NODE_OPTIONS 限制記憶體、Termux:Boot 開機自啟。連線方式：SSH tunnel port 18790 → openclaw tui。
 ---
