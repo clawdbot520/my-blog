@@ -15,7 +15,6 @@ prompt: A neural distillation process with chat logs flowing through filters int
 summary: LanceDB Pro memory distill 完整架構：jsonl_distill.py 三步流程（init/run/commit）、distiller agent cron 設定、2月底 README 說明被移除後的排障紀錄，以及本次修復過程。
 ---
 
-![[p22_lancedb_distill.png]]
 ![[Screenshot 2026-03-25 at 4.09.03 PM.png|612]]
 
 ## 1. 系統概述 (System Overview)

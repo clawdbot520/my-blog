@@ -15,7 +15,6 @@ prompt: A futuristic Discord interface with glowing teal chat bubbles and styliz
 summary: 透過 Discord 官方 Bot API 將 OpenClaw 接入 Discord 頻道。支援多人 @ 機器人、執行 Shell 指令、存取本地 MCP Server 工具，實現「像真人一樣在群組裡寫代碼」的協作體驗。
 ---
 
-![[p17_discord_openclaw.png]]
 ![[Screenshot 2026-03-25 at 4.06.13 PM.png]]
 
 

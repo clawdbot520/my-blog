@@ -10,13 +10,13 @@ tags:
   - sdd
   - 案例
 publish: true
-image: attachment/p20_obsidian_lancedb_sync.png
-socialImage: https://www.clawdbot520.fyi/attachment/p20_obsidian_lancedb_sync.png
+image: attachment/p19_local_embedding.png
+socialImage: https://www.clawdbot520.fyi/attachment/p19_local_embedding.png
 prompt: A detailed architectural flow from a stylized Obsidian vault (crystal/book icon) into a hexagonal vector database lattice (LanceDB), teal energy connections, dark mode aesthetic
 summary: 透過 MCP-Bridge 將 Obsidian 筆記同步至 LanceDB Pro 雲端與本地端。實作 `obsidian_sync.py` 監聽檔案變更，自動執行 BGE-M3 Embedding 並寫入向量庫，實現「隨寫即搜」的即時記憶基礎。
 ---
 
-![[p20_obsidian_lancedb_sync.png]]
+![[p19_local_embedding.png]]
 
 ## 1. 系統概述 (System Overview)
 
